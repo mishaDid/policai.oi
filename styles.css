@@ -1,0 +1,102 @@
+/* Общие стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a2b4c; /* Темно-синий фон страницы */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff; /* Белый текст для контраста */
+}
+
+/* Стили для контейнера формы */
+.main-content {
+    background-color: #1f3c5c; /* Темно-синий фон формы */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+}
+
+/* Заголовок формы */
+h2 {
+    text-align: center;
+    color: #f1c40f; /* Желтый цвет, который контрастирует с темным фоном */
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Стили для всех полей ввода */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Стили для меток */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f1c40f; /* Желтый цвет для меток */
+    margin-bottom: 5px;
+}
+
+/* Стили для текстовых полей */
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #3498db; /* Голубая рамка для полей */
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #34495e; /* Темный фон для полей */
+    color: #fff; /* Белый текст в полях */
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Стили для фокуса на полях ввода */
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus {
+    border-color: #f39c12; /* Желтая рамка при фокусе */
+    outline: none;
+}
+
+/* Стили для кнопки отправки */
+button[type="submit"] {
+    background-color: #3498db; /* Голубая кнопка */
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Эффект наведения на кнопку */
+button[type="submit"]:hover {
+    background-color: #2980b9; /* Темно-синий при наведении */
+}
+
+/* Стили для текстового поля (textarea) */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 600px) {
+    .main-content {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}

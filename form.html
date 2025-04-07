@@ -1,0 +1,154 @@
+﻿
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація - Патрульна поліція</title>
+    <link rel="stylesheet" href="pol.css">
+    <style>
+        /* Стили для фона и контейнера формы */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e6f0ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #002f6c;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .logo {
+            width: 50px;
+            vertical-align: middle;
+        }
+
+        
+
+        
+        .main-content {
+            max-width: 480px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: #fff;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .main-content:hover {
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 26px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .registration-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .registration-form label {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .registration-form input {
+            padding: 14px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            outline: none;
+            background-color: #f9f9f9;
+        }
+
+        .registration-form input:focus {
+            border-color: #0056b3;
+            background-color: #fff;
+        }
+
+        .registration-form button {
+            padding: 14px;
+            background-color: #0056b3;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .registration-form button:hover {
+            background-color: #003d80;
+            transform: scale(1.05);
+        }
+
+        .back-button {
+            display: block;
+            margin: 30px 0;
+            text-align: center;
+            font-size: 16px;
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .back-button:hover {
+            text-decoration: underline;
+            color: #003d80;
+        }
+
+        /* Футер */
+        .footer {
+            background-color: #002f6c;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="c:\Endels\home\localhost\www\oid\od.png" alt="Емблема поліції" class="logo">
+        <div class="header-title">Національна поліція</div>
+    </div>
+
+    <div class="main-content">
+        <h2>Форма реєстрації</h2>
+        <form action="db.php" method="post" class="registration-form">
+            <label for="username">Логін:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="confirm-password">Підтвердження паролю:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            
+            <button type="submit">Зареєструватися</button>
+        </form>
+        <a href="pol.html" class="back-button">Назад на головну</a>
+    </div>
+
+    <div class="footer">Політика конфіденційності | Контакти | © 2025 Сайт не Офіційний для курсової роботи</div>
+</body>
+</html>
